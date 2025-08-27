@@ -25,3 +25,8 @@ let users = [
     {id: 1, name: 'Maximus', email: 'maximus@gmail.com'},
     {id: 1, name: 'Ragnar', email: 'ragnar@gmail.com'}
 ]
+
+// Função para buscar todos os usuáruos
+const findAll = () => {
+    return users;
+}
