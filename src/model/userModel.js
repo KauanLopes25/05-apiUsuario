@@ -45,3 +45,10 @@ const create = (newUser) => {
     user.push(userWithId)
     return userWithId
 }
+
+// Exportar as funções
+module.exports = {
+    findAll,
+    findById,
+    create
+}
