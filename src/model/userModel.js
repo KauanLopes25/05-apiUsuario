@@ -12,8 +12,8 @@
 
 /********************************************************************************************
 ********************************* COMANDOS UTILIZADOS ***************************************
-* find()
-
+* find() - Retorna o primeiro valor encontrado com base no parametro fornecido
+* ... - Serve para adicionar elementos entre arrays.
 ******************************** BIBLIOTECAS UTILIZADAS *************************************
 
 ********************************************************************************************/
@@ -32,5 +32,16 @@ const findAll = () => {
 
 // Função para buscar um usuário por ID
 const findById = (id) => {
-    return users.find()
+    return users.find(user => user.id === id)
+}
+
+// Função para adicionar um novo usuario
+const create = (newUser) => {
+    const newId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
+    // User.length > 0                              Condição de comparação, indicada pelo?
+    // User[user.length - 1].id + 1                 Execução caso atenda a condição de comparação
+    // :1                                           Execução caso não atenda, indicado pelo :
+    const userWithId = {id: newId, ...newUser}
+    user.push(userWithId)
+    return userWithId
 }
