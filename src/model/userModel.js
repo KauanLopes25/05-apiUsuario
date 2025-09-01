@@ -25,7 +25,7 @@ let users = [
     {id: 3, name: 'Ragnar', email: 'ragnar@gmail.com'}
 ]
 
-// Função para buscar todos os usuáruos
+// Função para retornar todos os usuáruos
 const findAll = () => {
     return users;
 }
