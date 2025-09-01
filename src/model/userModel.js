@@ -21,8 +21,8 @@
 // Simulação de um banco de dados em memória
 let users = [
     {id: 1, name: 'Alice', email: 'alice@gmail.com'},
-    {id: 1, name: 'Maximus', email: 'maximus@gmail.com'},
-    {id: 1, name: 'Ragnar', email: 'ragnar@gmail.com'}
+    {id: 2, name: 'Maximus', email: 'maximus@gmail.com'},
+    {id: 3, name: 'Ragnar', email: 'ragnar@gmail.com'}
 ]
 
 // Função para buscar todos os usuáruos
