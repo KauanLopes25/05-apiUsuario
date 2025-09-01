@@ -42,4 +42,4 @@ app.listen(porta, () => {
 })
 
 // Usando as rotas de usuario
-app.user('api/user',userRoutes)
+app.use('api/users',userRoutes)
