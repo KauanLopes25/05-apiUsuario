@@ -45,7 +45,7 @@ const getUserById = (req, res) => {
 }
 
 // Método do controlador para criar um novo usuário
-const createUser = (req,user) =>{
+const createUser = (req, res) =>{
     // Pegando os dados que foram enviados pelo Body (Corpo da Requisição)
     const {name, email} = req.body
 
@@ -56,7 +56,6 @@ const createUser = (req,user) =>{
         const newUser = userModel.create({name,email})
         res.status(201).json(newUser)
     }
-
 
 }
 module.exports = {

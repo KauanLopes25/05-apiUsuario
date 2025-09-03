@@ -42,7 +42,7 @@ const create = (newUser) => {
     // User[user.length - 1].id + 1                 Execução caso atenda a condição de comparação
     // :1                                           Execução caso não atenda, indicado pelo :
     const userWithId = {id: newId, ...newUser}
-    user.push(userWithId)
+    users.push(userWithId)
     return userWithId
 }
 

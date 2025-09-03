@@ -44,5 +44,5 @@ app.listen(porta, () => {
     console.log(`Servidor rodando em http://localhost:${porta}`)
 })
 
-// Usando as rotas de usuario
+// Definindo a rotas padrão de usuario
 app.use('/api/users', userRoutes)
